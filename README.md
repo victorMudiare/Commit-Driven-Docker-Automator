@@ -12,7 +12,6 @@ Automate the building of Docker images when new Git commits are detected.
 - [Getting Started](#getting-started)
 - [Configuration](#configuration)
 - [Requirements](#requirements)
-- [License](#license)
 
 ## Introduction
 
