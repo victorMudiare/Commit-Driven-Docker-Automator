@@ -27,7 +27,7 @@ The script checks for new commits in your Git repository. If a new commit is det
 
     bash
     git clone https://github.com/victorMudiare/Commit-Driven-Docker-Automator.git
-    cd your-repo-name
+    cd Commit-Driven-Docker-Automator
     
 
 2. *Install the required Python packages using `requirements.txt`:*
