@@ -12,6 +12,7 @@ Automate the building of Docker images when new Git commits are detected.
 - [Getting Started](#getting-started)
 - [Configuration](#configuration)
 - [Requirements](#requirements)
+- [License](#license)
 
 ## Introduction
 
@@ -36,22 +37,24 @@ The script checks for new commits in your Git repository. If a new commit is det
     pip install -r requirements.txt
     
 
-3. *Modify the script:*
+3. *Run the script with Docker image name:*
 
-    - Set your Docker image name in the script.
-    - Adjust the `commit_data_file` variable to the appropriate path for your JSON file.
-
-4. *Run the script:*
-
-    bash
-    python build_docker_on_commit.py
+    - Using command-line argument:
     
+        bash
+        python build_docker_on_commit.py --image-name your-image-name
+        
+      
+    - Using environment variable:
+    
+        bash
+        DOCKER_IMAGE_NAME=your-image-name python build_docker_on_commit.py
+        
 
 ## Configuration
 
 In the `build_docker_on_commit.py` script, you'll find the following configurable variables:
 
-- `your-image-name`: Set your desired Docker image name.
 - `commit_data_file`: Adjust this to specify the path for the JSON file storing the last commit hash.
 
 ## Requirements
